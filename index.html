@@ -224,7 +224,7 @@
     background:radial-gradient(65% 55% at 50% 118%, rgba(226,124,48,.6), rgba(192,86,42,.18) 45%, transparent 72%);
     animation:flicker 5s ease-in-out infinite;
   }
-  @keyframes flicker{0%,100%{opacity:.8;transform:scaleY(1)}20%{opacity:1;transform:scaleY(1.04)}45%{opacity:.62;transform:scaleY(.98)}70%{opacity:.92;transform:scaleY(1.02)}}
+  @keyframes flicker{0%,100%{opacity:.85}45%{opacity:.62}70%{opacity:.92}}
   .ember{position:absolute;bottom:-12px;width:5px;height:5px;border-radius:50%;
     background:radial-gradient(circle,#ffcf8a,#e2782c 60%,transparent);z-index:1;opacity:0;filter:blur(.3px);
     animation:rise linear infinite}
@@ -271,8 +271,8 @@
   .gate::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.34) 36%,rgba(0,0,0,.34) 60%,rgba(0,0,0,.6));transition:.5s}
   .gate:hover .gate-bg{transform:scale(1.05)}
   .gate .g-inner{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;padding:clamp(2.4rem,4.5vw,3.4rem) clamp(1.5rem,4vw,2.5rem)}
-  .gate .eyebrow{color:rgba(255,255,255,.82)}
-  .g-title{font-family:'Cormorant Garamond',serif;text-transform:none;font-weight:500;font-size:clamp(1.75rem,2.7vw,2.7rem);line-height:1.18;color:#fff;margin:.4rem 0 0;text-shadow:0 2px 24px rgba(0,0,0,.45);max-width:17ch}
+  .gate .eyebrow{color:rgba(255,255,255,.85);text-shadow:0 1px 8px rgba(0,0,0,.55)}
+  .g-title{font-family:'Cormorant Garamond',serif;text-transform:none;font-weight:500;font-size:clamp(1.75rem,2.7vw,2.7rem);line-height:1.18;color:#fff;margin:.4rem 0 0;text-shadow:0 2px 14px rgba(0,0,0,.62), 0 1px 3px rgba(0,0,0,.55);max-width:17ch}
   .glass{display:inline-block;font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:.74rem;color:#fff;padding:.9rem 2.2rem;border-radius:999px;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.12);backdrop-filter:blur(9px) saturate(1.3);-webkit-backdrop-filter:blur(9px) saturate(1.3);transition:.35s}
   .gate:hover .glass{background:rgba(255,255,255,.24);border-color:rgba(255,255,255,.8)}
   .gate-wide{min-height:min(50vh,430px)}
@@ -325,12 +325,22 @@
       <a class="btn" href="menu.html">View the Menu</a>
     </div>
   </div>
-  <span class="ember" style="left:12%;animation-duration:6s;animation-delay:0s"></span>
-  <span class="ember" style="left:28%;animation-duration:8s;animation-delay:1.4s"></span>
-  <span class="ember" style="left:44%;animation-duration:5.5s;animation-delay:2.6s"></span>
-  <span class="ember" style="left:59%;animation-duration:7.2s;animation-delay:.8s"></span>
-  <span class="ember" style="left:73%;animation-duration:6.6s;animation-delay:3.2s"></span>
-  <span class="ember" style="left:87%;animation-duration:9s;animation-delay:2s"></span>
+  <span class="ember" style="left:6%;animation-duration:6s;animation-delay:0s"></span>
+  <span class="ember" style="left:13%;animation-duration:8s;animation-delay:1.4s"></span>
+  <span class="ember" style="left:20%;animation-duration:5.5s;animation-delay:2.6s"></span>
+  <span class="ember" style="left:27%;animation-duration:7.2s;animation-delay:0.8s"></span>
+  <span class="ember" style="left:34%;animation-duration:6.6s;animation-delay:3.2s"></span>
+  <span class="ember" style="left:41%;animation-duration:9s;animation-delay:2s"></span>
+  <span class="ember" style="left:48%;animation-duration:6.2s;animation-delay:4.1s"></span>
+  <span class="ember" style="left:55%;animation-duration:7.8s;animation-delay:1.1s"></span>
+  <span class="ember" style="left:62%;animation-duration:5.8s;animation-delay:3.6s"></span>
+  <span class="ember" style="left:69%;animation-duration:8.4s;animation-delay:0.4s"></span>
+  <span class="ember" style="left:76%;animation-duration:6.9s;animation-delay:2.9s"></span>
+  <span class="ember" style="left:83%;animation-duration:7.4s;animation-delay:4.6s"></span>
+  <span class="ember" style="left:90%;animation-duration:5.6s;animation-delay:1.8s"></span>
+  <span class="ember" style="left:96%;animation-duration:8.8s;animation-delay:3.9s"></span>
+  <span class="ember" style="left:31%;animation-duration:6.4s;animation-delay:5.2s"></span>
+  <span class="ember" style="left:66%;animation-duration:7.1s;animation-delay:5.8s"></span>
 </section>
 
 
