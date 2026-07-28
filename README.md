@@ -1,6 +1,6 @@
 # Bonfire at The Continental Fire Co.
 
-Landing page for **Bonfire at The Continental Fire Co.**, a steakhouse, lounge, and live-music venue in a historic 1885 firehouse in downtown Houghton, Michigan.
+Landing page for **Bonfire at The Continental Fire Co.**, a steakhouse, lounge, and live-music venue in a historic 1883 firehouse in downtown Houghton, Michigan.
 
 A single, self-contained static site: one `index.html` with all CSS and JavaScript inline and photos embedded, plus one social-share image. No build step and no dependencies.
 
@@ -20,7 +20,7 @@ A single, self-contained static site: one `index.html` with all CSS and JavaScri
 4. After a minute the site will be live at:
 
    ```
-   https://velosify.github.io/bonfire/
+   https://bonfirecfc.com/
    ```
 
 The social-share tags in `index.html` already point at that URL. If you serve the site from a **custom domain** (or a different host such as Cloudflare Pages), update the absolute URLs in the `og:image`, `twitter:image`, and `og:url` meta tags near the top of `index.html` to match your final domain, or previews may not render.
