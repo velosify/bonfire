@@ -253,6 +253,16 @@
     font-family:'Inter';font-size:.9rem;border-radius:1px}
   .news input:focus{outline:none;border-color:var(--gold)}
 
+  /* ---------- MENU TEASER ---------- */
+  .menu-teaser{position:relative;min-height:86vh;display:flex;align-items:center;justify-content:center;text-align:center;border-block:1px solid var(--line);
+    background:linear-gradient(rgba(11,9,8,.6),rgba(11,9,8,.72)),radial-gradient(85% 70% at 50% 32%, rgba(192,86,42,.28), transparent 60%),#140d09 url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1900&q=80') center/cover;}
+  .menu-teaser .mt-inner{position:relative;z-index:2;width:min(780px,90vw);padding:2rem}
+  .mt-title{font-family:'Cormorant Garamond',serif;text-transform:none;font-weight:500;font-size:clamp(2.1rem,4.8vw,3.6rem);line-height:1.14;color:var(--cream);margin:.3rem 0 .4rem}
+  .menu-hero{position:relative;padding:10rem 0 3rem;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--charcoal),var(--black))}
+  .menu-hero h1{font-size:clamp(2.6rem,7vw,5rem)}
+  .menu-back{display:inline-block;margin-top:3.2rem;font-family:'Jost';text-transform:uppercase;letter-spacing:.2em;font-size:.78rem;color:var(--gold-bright);border-bottom:1px solid var(--line);padding-bottom:.3rem}
+  .menu-back:hover{color:var(--gold)}
+
   /* ---------- RESPONSIVE ---------- */
   @media(max-width:900px){
     nav.links{position:fixed;inset:0 0 0 auto;width:min(300px,80vw);background:rgba(11,9,8,.98);backdrop-filter:blur(12px);
@@ -281,7 +291,7 @@
   <button class="menu-toggle" id="toggle" aria-label="Menu">☰</button>
   <nav class="links" id="nav">
     <a href="#story">Our Story</a>
-    <a href="#menu">Menu</a>
+    <a href="menu.html">Menu</a>
     <a href="#experiences">Experiences</a>
     <a href="#visit">Visit</a>
     <a class="btn" href="tel:+19065235833">Reserve</a>
@@ -296,7 +306,7 @@
     <p class="lede">Fire-forged steaks, craft cocktails, and live music inside a historic firehouse in the heart of Copper Country.</p>
     <div class="hero-cta">
       <a class="btn solid" href="tel:+19065235833">Reserve a Table</a>
-      <a class="btn" href="#menu">View the Menu</a>
+      <a class="btn" href="menu.html">View the Menu</a>
     </div>
   </div>
   <span class="ember" style="left:12%;animation-duration:6s;animation-delay:0s"></span>
@@ -336,107 +346,15 @@
   </div>
 </section>
 
-<!-- MENU -->
-<div class="menu-wrap">
-  <section class="pad wrap" id="menu">
-    <div class="center reveal">
-      <p class="eyebrow">The Table</p>
-      <h2 class="section-title">Fire &amp; Fare</h2>
-      <div class="rule"></div>
-    </div>
-    <p class="note reveal">Prices and offerings may change seasonally. Ask your server about current features and our rotating Bonfire Specials.</p>
-
-    <div class="menu-cat reveal">
-      <h3 class="cat-title">Appetizers &amp; Small Plates</h3>
-      <div class="items">
-        <div class="m-item"><div class="l"><b>Jalapeño Poppers <span class="diet">gf</span></b><p>Filled with cream cheese, wrapped in bacon, cracked black peppercorn.</p></div><span class="dots"></span><span class="price">10</span></div>
-        <div class="m-item"><div class="l"><b>Coconut Shrimp</b><p>Five shrimp, hand-battered &amp; rolled in coconut, Thai chili sauce.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Ahi Tuna <span class="diet">gf</span></b><p>Blackened sashimi-grade tuna, Thai slaw, chili oil &amp; balsamic reduction.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Parmesan Artichoke Spinach Dip <span class="diet">v</span></b><p>Served with corn tortilla chips and flatbread.</p></div><span class="dots"></span><span class="price">10</span></div>
-        <div class="m-item"><div class="l"><b>Mussels</b><p>Onions, garlic, white wine, heavy cream &amp; bleu cheese, with bread. DF available.</p></div><span class="dots"></span><span class="price">14</span></div>
-        <div class="m-item"><div class="l"><b>Pretzel Fries <span class="diet">v</span></b><p>Baked &amp; served with our beer cheese sauce.</p></div><span class="dots"></span><span class="price">8</span></div>
-        <div class="m-item"><div class="l"><b>Crab Cakes</b><p>Two cakes served with our chili remoulade.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Breaded Cauliflower <span class="diet">v</span></b><p>Breaded &amp; deep fried, served with buffalo sauce.</p></div><span class="dots"></span><span class="price">8</span></div>
-        <div class="m-item"><div class="l"><b>Steak Bites <span class="diet">gf</span></b><p>Blackened and served with a creamy bleu cheese sauce.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Smoked Wings</b><p>1 lb bone-in, smoked in-house, Honey Chipotle BBQ or Buffalo, ranch or bleu cheese.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Julie's Famous Guacamole <span class="diet">gf · v</span></b><p>Made to order, fresh corn tortilla chips. One or two avocado.</p></div><span class="dots"></span><span class="price">7 / 13</span></div>
-        <div class="m-item"><div class="l"><b>Cheese Curds <span class="diet">v</span></b><p>Garlic, Cheddar &amp; Bacon, or Ghost Pepper. Choice of dipping sauces.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Bonfire Nachos</b><p>Onions, jalapeños, mozzarella &amp; cheddar, honey sriracha &amp; sriracha aioli. Pulled pork or chicken.</p></div><span class="dots"></span><span class="price">12 / 14</span></div>
-        <div class="m-item"><div class="l"><b>Lobster Poutine</b><p>Sweet potato fries, white cheddar curds, lobster tarragon cream sauce.</p></div><span class="dots"></span><span class="price">14</span></div>
-        <div class="m-item"><div class="l"><b>Whitefish Cakes</b><p>Two smoked Lake Superior cakes, cilantro lime aioli.</p></div><span class="dots"></span><span class="price">14</span></div>
-      </div>
-    </div>
-
-    <div class="menu-cat reveal">
-      <h3 class="cat-title">Burgers &amp; Sandwiches</h3>
-      <p class="cat-sub">Served with garlic parmesan fries, sweet potato fries, or onion rings. Choice of sauce and cheese. Gluten-free bun available, add 2.</p>
-      <div class="items">
-        <div class="m-item"><div class="l"><b>Bonfire Burger</b><p>Half-pound brisket &amp; chuck, grilled or blackened, choice of cheese &amp; sauce, brioche.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Cuban Panini</b><p>Grilled pork, ham, swiss, pickles &amp; mustard garlic jalapeño aioli on Tuscan white.</p></div><span class="dots"></span><span class="price">16</span></div>
-        <div class="m-item"><div class="l"><b>Popper Burger</b><p>Brisket &amp; chuck topped with two jalapeño poppers, brioche.</p></div><span class="dots"></span><span class="price">14</span></div>
-        <div class="m-item"><div class="l"><b>Chicken Pesto Panini</b><p>Orange-rosemary chicken, pesto, bacon &amp; swiss on Tuscan white.</p></div><span class="dots"></span><span class="price">13</span></div>
-        <div class="m-item"><div class="l"><b>Elk Burger</b><p>Wild elk with grilled onions &amp; swiss, brioche.</p></div><span class="dots"></span><span class="price">14</span></div>
-        <div class="m-item"><div class="l"><b>Whitefish Tacos</b><p>Hand-battered Lake Superior whitefish, cabbage, avocado, jalapeño &amp; baja sauce. GF option.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Beyond Burger <span class="diet">v · vg</span></b><p>Vegan patty, tomato, lettuce, red onion &amp; a side of mango salsa.</p></div><span class="dots"></span><span class="price">14</span></div>
-        <div class="m-item"><div class="l"><b>Chipotle Shrimp Tacos</b><p>Chipotle shrimp, cucumber-cilantro, avocado, baja sauce &amp; mango salsa, warm tortillas.</p></div><span class="dots"></span><span class="price">14</span></div>
-        <div class="m-item"><div class="l"><b>Smokehouse Burger</b><p>Brisket &amp; chuck, smoked pork, Bonfire-Brandy BBQ, crispy onions &amp; beer cheese.</p></div><span class="dots"></span><span class="price">15</span></div>
-        <div class="m-item"><div class="l"><b>California Chicken Club</b><p>Chicken breast, bacon, grilled pineapple, swiss &amp; avocado, brioche.</p></div><span class="dots"></span><span class="price">13</span></div>
-      </div>
-    </div>
-
-    <div class="menu-cat reveal">
-      <h3 class="cat-title">Salads</h3>
-      <p class="cat-sub">Add chicken, shrimp, or steak where noted.</p>
-      <div class="items">
-        <div class="m-item"><div class="l"><b>Strawberry Spinach</b><p>Spinach, candied pecans, dried cranberries, goat cheese, red onion, poppyseed. +Chicken 14, +Shrimp 16.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Caesar</b><p>Romaine, croutons, parmesan, house-made caesar (contains anchovies). +Chicken 14, +Steak 16.</p></div><span class="dots"></span><span class="price">11</span></div>
-        <div class="m-item"><div class="l"><b>Apple Harvest</b><p>Mixed greens, apples, walnuts, cranberries, red onion, bleu cheese, açaí dressing. +Chicken 14, +Shrimp 16.</p></div><span class="dots"></span><span class="price">12</span></div>
-        <div class="m-item"><div class="l"><b>Grilled Salmon Salad</b><p>5 oz filet, greens, cucumbers, red onion, tomatoes, crumbled bleu cheese &amp; bleu cheese dressing.</p></div><span class="dots"></span><span class="price">16</span></div>
-      </div>
-    </div>
-
-    <div class="menu-cat reveal">
-      <h3 class="cat-title">Entrées</h3>
-      <p class="cat-sub">Served with a side salad and two sides (excluding pastas). Sides: street corn (+2), mushroom parmesan risotto, potato du jour, garlic parmesan fries, sweet potato fries, onion rings, zucchini medley.</p>
-      <div class="items">
-        <div class="m-item"><div class="l"><b>Ribeye</b><p>14 oz, grilled, Black &amp; Bleu or Coffee-Cocoa rubbed, cranberry demi-glace.</p></div><span class="dots"></span><span class="price">25</span></div>
-        <div class="m-item"><div class="l"><b>Twin Lobster Tails</b><p>Served with drawn butter.</p></div><span class="dots"></span><span class="price">32</span></div>
-        <div class="m-item"><div class="l"><b>Herb-Encrusted Filet</b><p>8 oz, served with a garlic herb butter.</p></div><span class="dots"></span><span class="price">32</span></div>
-        <div class="m-item"><div class="l"><b>Southwest New York Strip</b><p>14 oz, southwest rubbed &amp; topped with crispy onions.</p></div><span class="dots"></span><span class="price">24</span></div>
-        <div class="m-item"><div class="l"><b>Honey BBQ Salmon</b><p>8 oz, served with mango salsa.</p></div><span class="dots"></span><span class="price">24</span></div>
-        <div class="m-item"><div class="l"><b>Crab-Stuffed Salmon</b><p>8 oz, served with a citrus beurre blanc.</p></div><span class="dots"></span><span class="price">24</span></div>
-        <div class="m-item"><div class="l"><b>Almond-Encrusted Whitefish</b><p>Fresh Lake Superior whitefish, cranberry compound butter.</p></div><span class="dots"></span><span class="price">24</span></div>
-        <div class="m-item"><div class="l"><b>Coconut Shrimp</b><p>Ten, hand-battered &amp; rolled in sweet coconut, chili sauce.</p></div><span class="dots"></span><span class="price">21</span></div>
-        <div class="m-item"><div class="l"><b>Bonfire BBQ Ribs</b><p>Half rack, St. Louis style, smoked in-house, Bonfire Brandy BBQ.</p></div><span class="dots"></span><span class="price">18</span></div>
-        <div class="m-item"><div class="l"><b>Bonfire Chicken</b><p>Grilled orange-rosemary chicken, sun-dried tomato-basil cream sauce.</p></div><span class="dots"></span><span class="price">16</span></div>
-        <div class="m-item"><div class="l"><b>Roma Chicken</b><p>Orange-rosemary chicken breast, rosemary tomatoes, spinach &amp; mozzarella.</p></div><span class="dots"></span><span class="price">15</span></div>
-      </div>
-    </div>
-
-    <div class="menu-cat reveal">
-      <h3 class="cat-title">Pastas</h3>
-      <p class="cat-sub">Gluten-free pasta available, add 2.</p>
-      <div class="items">
-        <div class="m-item"><div class="l"><b>Lobster Mac &amp; Cheese</b><p>6 oz baked lobster tail on our creamy mac &amp; cheese.</p></div><span class="dots"></span><span class="price">21</span></div>
-        <div class="m-item"><div class="l"><b>Steak Bite Pasta</b><p>Blackened steak bites on linguine, creamy bleu cheese alfredo.</p></div><span class="dots"></span><span class="price">18</span></div>
-        <div class="m-item"><div class="l"><b>Southwest Chicken Pasta</b><p>Grilled chicken, red onion, spinach &amp; red peppers on penne, bacon alfredo.</p></div><span class="dots"></span><span class="price">18</span></div>
-        <div class="m-item"><div class="l"><b>Sun-Dried Tomato Basil Pasta</b><p>Linguini in sun-dried tomato basil cream. +Chicken 16.</p></div><span class="dots"></span><span class="price">14</span></div>
-        <div class="m-item"><div class="l"><b>Penne Pesto Pasta</b><p>Black olives &amp; diced tomatoes tossed in our pesto. +Chicken 16.</p></div><span class="dots"></span><span class="price">14</span></div>
-        <div class="m-item"><div class="l"><b>Baked Spinach &amp; Cheese Rotolo <span class="diet">v</span></b><p>Lasagna noodles stuffed with spinach &amp; cheese, marinara &amp; pesto.</p></div><span class="dots"></span><span class="price">18</span></div>
-      </div>
-    </div>
-
-    <div class="menu-cat reveal">
-      <h3 class="cat-title">Desserts</h3>
-      <div class="items">
-        <div class="m-item"><div class="l"><b>Desserts</b><p>Carrot Cake · Peanut Butter Explosion · J.D. Ice Cream (Jack Daniels chocolate chip) · Ice Cream Sundae.</p></div><span class="dots"></span><span class="price">7</span></div>
-        <div class="m-item"><div class="l"><b>Dessert for Two</b><p>Decadent Chocolate Cake (gluten free) · White Chocolate Raspberry Cheesecake.</p></div><span class="dots"></span><span class="price">9</span></div>
-      </div>
-    </div>
-
-    <p class="legend reveal">gf gluten-free · v vegetarian · vg vegan · df dairy-free &nbsp;·&nbsp; Consuming raw or undercooked meats, fish, or eggs may increase your risk of foodborne illness.</p>
-  </section>
-</div>
+<!-- MENU TEASER -->
+<section class="menu-teaser" id="menu">
+  <div class="mt-inner">
+    <p class="eyebrow" style="justify-content:center">On the Menu</p>
+    <h2 class="mt-title">A menu created to indulge every sense</h2>
+    <div class="rule"></div>
+    <a class="btn" href="menu.html">Explore Menu</a>
+  </div>
+</section>
 
 <!-- COCKTAILS -->
 <section class="pad wrap" id="drinks">
@@ -558,7 +476,7 @@
       <div class="fcol">
         <h4>Explore</h4>
         <a href="#story">Our Story</a>
-        <a href="#menu">Menu</a>
+        <a href="menu.html">Menu</a>
         <a href="#drinks">The Bar</a>
         <a href="#experiences">Experiences</a>
       </div>

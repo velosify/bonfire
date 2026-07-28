@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menu · Bonfire at The Continental Fire Co.</title>
+<meta name="description" content="The full menu at Bonfire at The Continental Fire Co. — small plates, burgers, salads, entrees, pastas, and desserts in Houghton, Michigan." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bonfirecfc.com/menu.html" />
+<meta property="og:title" content="Menu · Bonfire at The Continental Fire Co." />
+<meta property="og:description" content="Small plates, burgers, salads, entrees, pastas, and desserts. Houghton, Michigan." />
+<meta property="og:image" content="https://bonfirecfc.com/bonfire-og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://bonfirecfc.com/bonfire-og.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+<noscript><style>.reveal,.ra{opacity:1!important;transform:none!important}</style></noscript>
+<style>
+  :root{
+    --black:#0b0908;
+    --charcoal:#141110;
+    --panel:#1a1614;
+    --gold:#c9a15a;
+    --gold-bright:#e2c07f;
+    --ember:#c0562a;
+    --cream:#f3ece1;
+    --muted:#a99e8f;
+    --line:rgba(201,161,90,.22);
+    --shadow:0 30px 80px rgba(0,0,0,.55);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--black);
+    color:var(--cream);
+    font-family:'Inter',system-ui,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,.display{font-family:'Cormorant Garamond',serif;font-weight:700;letter-spacing:.01em;line-height:1.02;text-transform:uppercase}
+  .serif{font-family:'Cormorant Garamond',serif;text-transform:none;letter-spacing:0}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{width:min(1200px,92vw);margin-inline:auto}
+  .eyebrow{
+    font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.42em;
+    font-size:.72rem;font-weight:500;color:var(--gold);margin-bottom:1.1rem;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.2em;
+    font-size:.82rem;font-weight:500;
+    padding:.95rem 2rem;border:1px solid var(--gold);color:var(--gold-bright);
+    background:transparent;cursor:pointer;transition:.35s ease;border-radius:1px;
+  }
+  .btn:hover{background:var(--gold);color:var(--black);box-shadow:0 12px 30px rgba(201,161,90,.25)}
+  .btn.solid{background:var(--gold);color:var(--black)}
+  .btn.solid:hover{background:var(--gold-bright);border-color:var(--gold-bright)}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.5rem min(4vw,3rem);transition:.4s ease;
+  }
+  header.scrolled{background:rgba(11,9,8,.92);backdrop-filter:blur(10px);padding-block:1rem;border-bottom:1px solid var(--line)}
+  .brand{display:flex;flex-direction:column;line-height:1}
+  .brand b{font-family:'Jost';font-weight:700;font-size:1.5rem;letter-spacing:.14em;color:var(--cream)}
+  .brand span{font-size:.6rem;letter-spacing:.34em;color:var(--gold);text-transform:uppercase;margin-top:.35rem}
+  nav.links{display:flex;gap:2.3rem;align-items:center}
+  nav.links a{font-family:'Jost';text-transform:uppercase;letter-spacing:.16em;font-size:.82rem;color:var(--cream);opacity:.85;transition:.25s}
+  nav.links a:hover{opacity:1;color:var(--gold-bright)}
+  .menu-toggle{display:none;background:none;border:none;color:var(--cream);font-size:1.6rem;cursor:pointer}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;min-height:100vh;display:flex;align-items:center;
+    background:
+      radial-gradient(120% 90% at 50% 120%, rgba(192,86,42,.42), transparent 55%),
+      linear-gradient(180deg, rgba(11,9,8,.72), rgba(11,9,8,.35) 40%, rgba(11,9,8,.9)),
+      #1a0d07 url('https://images.unsplash.com/photo-1475619690928-9dc04b6a1f34?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+  }
+  .hero .wrap{position:relative;z-index:2;text-align:center;padding-top:8rem}
+  .hero h1{font-size:clamp(3rem,9vw,7.5rem);font-weight:700;text-shadow:0 8px 40px rgba(0,0,0,.6)}
+  .hero h1 em{font-style:normal;color:var(--gold-bright);display:block}
+  .hero .lede{
+    font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,2.4vw,1.7rem);
+    color:var(--cream);opacity:.92;max-width:640px;margin:1.6rem auto 2.4rem;font-weight:400;
+  }
+  .hero-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+  .scroll-hint{
+    position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);z-index:2;
+    font-family:'Jost';letter-spacing:.3em;font-size:.62rem;text-transform:uppercase;color:var(--muted);
+    display:flex;flex-direction:column;align-items:center;gap:.6rem;
+  }
+  .scroll-hint::after{content:"";width:1px;height:46px;background:linear-gradient(var(--gold),transparent);animation:pulse 2.2s infinite}
+  @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+
+  /* ---------- PROMO BAND ---------- */
+  .promo{
+    background:linear-gradient(90deg,var(--panel),#221a15);
+    border-block:1px solid var(--line);
+    display:grid;grid-template-columns:1.05fr 1fr;align-items:center;
+  }
+  .promo .txt{padding:clamp(3rem,6vw,5.5rem) clamp(2rem,6vw,5rem)}
+  .promo .img{min-height:100%;background:#000 none center/cover;position:relative}
+  .promo .img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,17,16,.6),transparent 40%)}
+  .promo h2{font-size:clamp(2rem,4vw,3.2rem);margin:.4rem 0 1rem}
+  .promo p{color:var(--muted);max-width:46ch;margin-bottom:1.8rem}
+
+  /* ---------- SECTION SHELL ---------- */
+  section.pad{padding:clamp(4.5rem,10vw,8rem) 0}
+  .center{text-align:center;max-width:720px;margin-inline:auto}
+  .section-title{font-size:clamp(2.2rem,5vw,3.6rem);margin:.3rem 0 1.2rem}
+  .rule{width:60px;height:2px;background:var(--gold);margin:1.4rem auto}
+  .rule.left{margin-inline:0}
+
+  /* ---------- STORY ---------- */
+  .story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+  .story .imgs{position:relative;aspect-ratio:4/5;border:1px solid var(--line)}
+  .story .imgs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .story .imgs::before{content:"";position:absolute;inset:14px;border:1px solid rgba(243,236,225,.15);z-index:2;pointer-events:none}
+  .story p{color:var(--muted);margin-bottom:1.2rem}
+  .story .serif{color:var(--cream);font-size:1.35rem;line-height:1.5}
+
+  /* ---------- MENU ---------- */
+  .menu-wrap{background:var(--charcoal);border-block:1px solid var(--line)}
+  .note{
+    text-align:center;font-size:.78rem;color:var(--muted);letter-spacing:.03em;
+    border:1px dashed var(--line);padding:.7rem 1.2rem;border-radius:2px;max-width:640px;
+    margin:0 auto 3rem;font-style:italic;
+  }
+  .menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,4.5rem)}
+  .menu-col h3{font-size:1.5rem;color:var(--gold-bright);border-bottom:1px solid var(--line);padding-bottom:.8rem;margin-bottom:1.6rem}
+  .m-item{display:flex;justify-content:space-between;gap:1.2rem;align-items:baseline;margin-bottom:1.5rem}
+  .m-item .l b{font-family:'Jost';font-weight:500;letter-spacing:.04em;color:var(--cream);text-transform:uppercase;font-size:1rem}
+  .m-item .l p{color:var(--muted);font-size:.86rem;margin-top:.2rem}
+  .m-item .dots{flex:1;border-bottom:1px dotted rgba(169,158,143,.4);transform:translateY(-4px)}
+  .m-item .price{font-family:'Jost';color:var(--gold);letter-spacing:.05em;white-space:nowrap}
+  .m-item .l b .diet{font-family:'Jost';font-size:.6rem;letter-spacing:.12em;color:var(--gold);opacity:.85;margin-left:.45rem;text-transform:uppercase}
+  .menu-cat{margin-top:clamp(3rem,6vw,4.5rem)}
+  .menu-cat:first-of-type{margin-top:0}
+  .cat-title{text-align:center;font-size:clamp(1.7rem,3.6vw,2.6rem);color:var(--gold-bright);margin-bottom:.5rem}
+  .cat-sub{text-align:center;color:var(--muted);font-size:.82rem;max-width:64ch;margin:0 auto 2.4rem;line-height:1.55}
+  .items{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(2rem,6vw,4.5rem)}
+  .legend{text-align:center;color:var(--muted);font-size:.72rem;letter-spacing:.08em;margin-top:3rem;border-top:1px solid var(--line);padding-top:1.6rem;text-transform:uppercase}
+
+  /* ---------- COCKTAILS GALLERY ---------- */
+  .cocktails{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+  .cocktail{position:relative;aspect-ratio:3/4;overflow:hidden;border:1px solid var(--line)}
+  .cocktail img{width:100%;height:100%;object-fit:cover;transition:.6s ease;filter:brightness(.8)}
+  .cocktail:hover img{transform:scale(1.06);filter:brightness(.95)}
+  .cocktail .cap{position:absolute;inset:auto 0 0 0;padding:1.4rem 1.2rem;background:linear-gradient(transparent,rgba(11,9,8,.9))}
+  .cocktail .cap b{font-family:'Jost';text-transform:uppercase;letter-spacing:.1em;font-size:1.05rem;display:block}
+  .cocktail .cap span{font-size:.72rem;color:var(--gold);letter-spacing:.18em;text-transform:uppercase}
+
+  /* ---------- EXPERIENCES ---------- */
+  .exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+  .exp{border:1px solid var(--line);background:var(--panel);padding:2.4rem 2rem;transition:.35s}
+  .exp:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:var(--shadow)}
+  .exp .ico{font-size:1.6rem;margin-bottom:1rem}
+  .exp h3{font-size:1.3rem;margin-bottom:.7rem;color:var(--cream)}
+  .exp p{color:var(--muted);font-size:.9rem}
+
+  /* ---------- LOCATION ---------- */
+  .loc{background:var(--charcoal);border-top:1px solid var(--line)}
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr}
+  .loc .info{padding:clamp(3.5rem,7vw,6rem) clamp(2rem,6vw,5rem)}
+  .loc iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.4) contrast(1.05) brightness(.85)}
+  .fact{display:flex;gap:1rem;margin-bottom:1.7rem;align-items:flex-start}
+  .fact .k{font-family:'Jost';text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:var(--gold);min-width:96px;padding-top:.25rem}
+  .fact .v{color:var(--cream)}
+  .fact .v span{color:var(--muted);display:block;font-size:.92rem}
+  .hours-row{display:flex;justify-content:space-between;max-width:340px;border-bottom:1px solid rgba(169,158,143,.15);padding:.45rem 0;font-size:.92rem}
+  .hours-row.closed{color:var(--muted)}
+
+  /* ---------- RESERVE BAND ---------- */
+  .reserve{
+    position:relative;text-align:center;padding:clamp(5rem,11vw,8rem) 1rem;
+    background:
+      linear-gradient(rgba(11,9,8,.78),rgba(11,9,8,.86)),
+      radial-gradient(120% 120% at 50% 0%, rgba(192,86,42,.4), transparent 60%),
+      #1a0d07 url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1800&q=80') center/cover fixed;
+  }
+  .reserve h2{font-size:clamp(2.4rem,6vw,4.4rem)}
+  .reserve p{color:var(--cream);opacity:.85;max-width:520px;margin:1.2rem auto 2.2rem;font-family:'Cormorant Garamond';font-size:1.3rem}
+  .phone-big{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:clamp(2rem,4.6vw,3.1rem);letter-spacing:.01em;color:var(--gold-bright);margin-top:1.4rem;display:inline-block}
+  #visit .section-title{font-family:'Cinzel',serif;font-weight:700;letter-spacing:.06em;font-size:clamp(2rem,4.2vw,3rem);line-height:1.12}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--black);padding:4.5rem 0 2rem;border-top:1px solid var(--line)}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.5rem}
+  footer .brand b{font-size:1.6rem}
+  footer p.about{color:var(--muted);font-size:.9rem;margin-top:1.2rem;max-width:34ch}
+  .fcol h4{font-size:.9rem;letter-spacing:.14em;color:var(--gold);margin-bottom:1.2rem}
+  .fcol a,.fcol p{display:block;color:var(--muted);font-size:.9rem;margin-bottom:.7rem;transition:.2s}
+  .fcol a:hover{color:var(--gold-bright)}
+  .socials{display:flex;gap:1rem;margin-top:1.4rem}
+  .socials a{width:38px;height:38px;border:1px solid var(--line);display:grid;place-items:center;border-radius:50%;color:var(--cream);transition:.3s}
+  .socials a:hover{background:var(--gold);color:var(--black);border-color:var(--gold)}
+  .copyright{border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.8rem;text-align:center;color:var(--muted);font-size:.78rem;letter-spacing:.04em}
+  .credit{text-align:center;color:var(--muted);font-size:.8rem;letter-spacing:.05em;margin-top:.9rem}
+  .credit a{color:var(--cream);text-decoration:underline;text-underline-offset:3px;transition:.2s}
+  .credit a:hover{color:var(--gold-bright)}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:1;transform:none}
+  .reveal.in{opacity:1;transform:none}
+  .ra{opacity:0;transform:translateY(26px);transition:opacity .85s cubic-bezier(.2,.75,.2,1), transform .85s cubic-bezier(.2,.75,.2,1)}
+  .ra.vis{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal,.ra{opacity:1!important;transform:none!important;transition:none}}
+
+  /* ---------- HERO FIRELIGHT ---------- */
+  .hero::before{
+    content:"";position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:screen;
+    background:radial-gradient(65% 55% at 50% 118%, rgba(226,124,48,.6), rgba(192,86,42,.18) 45%, transparent 72%);
+    animation:flicker 5s ease-in-out infinite;
+  }
+  @keyframes flicker{0%,100%{opacity:.8;transform:scaleY(1)}20%{opacity:1;transform:scaleY(1.04)}45%{opacity:.62;transform:scaleY(.98)}70%{opacity:.92;transform:scaleY(1.02)}}
+  .ember{position:absolute;bottom:-12px;width:5px;height:5px;border-radius:50%;
+    background:radial-gradient(circle,#ffcf8a,#e2782c 60%,transparent);z-index:1;opacity:0;filter:blur(.3px);
+    animation:rise linear infinite}
+  @keyframes rise{0%{transform:translateY(0) scale(1);opacity:0}12%{opacity:1}100%{transform:translateY(-88vh) translateX(30px) scale(.3);opacity:0}}
+
+  /* tags on experience cards */
+  .exp .tag{display:inline-block;font-family:'Jost';text-transform:uppercase;letter-spacing:.22em;
+    font-size:.62rem;color:var(--gold);border:1px solid var(--line);padding:.3rem .7rem;border-radius:2px;margin-bottom:1.2rem}
+
+  /* ---------- INSTAGRAM CTA ---------- */
+  .insta{position:relative;text-align:center;padding:clamp(4rem,9vw,6.5rem) 1rem;border-top:1px solid var(--line);
+    background:linear-gradient(180deg,var(--black),var(--charcoal))}
+  .insta h2{font-size:clamp(2rem,5vw,3.4rem)}
+  .insta p{color:var(--muted);max-width:34ch;margin:1rem auto 1.8rem}
+  .insta-row{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;margin-top:2.6rem}
+  .insta-row .sq{width:120px;height:120px;border:1px solid var(--line);background:#20140d center/cover;filter:brightness(.85);transition:.4s}
+  .insta-row .sq:hover{filter:brightness(1);transform:translateY(-4px)}
+
+  /* ---------- NEWSLETTER ---------- */
+  .news{border-top:1px solid var(--line);background:var(--charcoal);padding:clamp(3.5rem,7vw,5rem) 0}
+  .news-in{display:flex;align-items:center;justify-content:space-between;gap:2.5rem;flex-wrap:wrap}
+  .news h3{font-size:clamp(1.6rem,3vw,2.3rem)}
+  .news p{color:var(--muted);margin-top:.5rem}
+  .news form{display:flex;gap:.7rem;flex:1;min-width:280px;max-width:460px}
+  .news input{flex:1;background:transparent;border:1px solid var(--line);color:var(--cream);padding:.9rem 1.1rem;
+    font-family:'Inter';font-size:.9rem;border-radius:1px}
+  .news input:focus{outline:none;border-color:var(--gold)}
+
+  /* ---------- MENU TEASER ---------- */
+  .menu-teaser{position:relative;min-height:86vh;display:flex;align-items:center;justify-content:center;text-align:center;border-block:1px solid var(--line);
+    background:linear-gradient(rgba(11,9,8,.6),rgba(11,9,8,.72)),radial-gradient(85% 70% at 50% 32%, rgba(192,86,42,.28), transparent 60%),#140d09 url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1900&q=80') center/cover;}
+  .menu-teaser .mt-inner{position:relative;z-index:2;width:min(780px,90vw);padding:2rem}
+  .mt-title{font-family:'Cormorant Garamond',serif;text-transform:none;font-weight:500;font-size:clamp(2.1rem,4.8vw,3.6rem);line-height:1.14;color:var(--cream);margin:.3rem 0 .4rem}
+  .menu-hero{position:relative;padding:10rem 0 3rem;text-align:center;border-bottom:1px solid var(--line);background:linear-gradient(180deg,var(--charcoal),var(--black))}
+  .menu-hero h1{font-size:clamp(2.6rem,7vw,5rem)}
+  .menu-back{display:inline-block;margin-top:3.2rem;font-family:'Jost';text-transform:uppercase;letter-spacing:.2em;font-size:.78rem;color:var(--gold-bright);border-bottom:1px solid var(--line);padding-bottom:.3rem}
+  .menu-back:hover{color:var(--gold)}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:900px){
+    nav.links{position:fixed;inset:0 0 0 auto;width:min(300px,80vw);background:rgba(11,9,8,.98);backdrop-filter:blur(12px);
+      flex-direction:column;justify-content:center;padding:3rem;transform:translateX(100%);transition:.4s;border-left:1px solid var(--line)}
+    nav.links.open{transform:none}
+    nav.links a{font-size:1.1rem}
+    .menu-toggle{display:block;z-index:70}
+    .promo,.story,.menu-grid,.items,.loc-grid,.foot-grid{grid-template-columns:1fr}
+    .cocktails{grid-template-columns:1fr 1fr}
+    .exp-grid{grid-template-columns:1fr}
+    .promo .img{min-height:280px}
+    .loc iframe{min-height:320px}
+    .reserve{background-attachment:scroll}
+    .m-item .dots{display:none}
+  }
+  @media(max-width:520px){.cocktails{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header id="hdr">
+  <a class="brand" href="index.html">
+    <b>BONFIRE</b>
+    <span>The Continental Fire Co.</span>
+  </a>
+  <button class="menu-toggle" id="toggle" aria-label="Menu">☰</button>
+  <nav class="links" id="nav">
+    <a href="index.html#story">Our Story</a>
+    <a href="menu.html">Menu</a>
+    <a href="index.html#experiences">Experiences</a>
+    <a href="index.html#visit">Visit</a>
+    <a class="btn" href="tel:+19065235833">Reserve</a>
+  </nav>
+</header>
+<section class="menu-hero">
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center">Bonfire at The Continental Fire Co.</p>
+    <h1>The Menu</h1>
+  </div>
+</section>
+<div class="menu-wrap">
+  <section class="pad wrap" id="menu">
+    <div class="center reveal">
+      <p class="eyebrow">The Table</p>
+      <h2 class="section-title">Fire &amp; Fare</h2>
+      <div class="rule"></div>
+    </div>
+    <p class="note reveal">Prices and offerings may change seasonally. Ask your server about current features and our rotating Bonfire Specials.</p>
+
+    <div class="menu-cat reveal">
+      <h3 class="cat-title">Appetizers &amp; Small Plates</h3>
+      <div class="items">
+        <div class="m-item"><div class="l"><b>Jalapeño Poppers <span class="diet">gf</span></b><p>Filled with cream cheese, wrapped in bacon, cracked black peppercorn.</p></div><span class="dots"></span><span class="price">10</span></div>
+        <div class="m-item"><div class="l"><b>Coconut Shrimp</b><p>Five shrimp, hand-battered &amp; rolled in coconut, Thai chili sauce.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Ahi Tuna <span class="diet">gf</span></b><p>Blackened sashimi-grade tuna, Thai slaw, chili oil &amp; balsamic reduction.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Parmesan Artichoke Spinach Dip <span class="diet">v</span></b><p>Served with corn tortilla chips and flatbread.</p></div><span class="dots"></span><span class="price">10</span></div>
+        <div class="m-item"><div class="l"><b>Mussels</b><p>Onions, garlic, white wine, heavy cream &amp; bleu cheese, with bread. DF available.</p></div><span class="dots"></span><span class="price">14</span></div>
+        <div class="m-item"><div class="l"><b>Pretzel Fries <span class="diet">v</span></b><p>Baked &amp; served with our beer cheese sauce.</p></div><span class="dots"></span><span class="price">8</span></div>
+        <div class="m-item"><div class="l"><b>Crab Cakes</b><p>Two cakes served with our chili remoulade.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Breaded Cauliflower <span class="diet">v</span></b><p>Breaded &amp; deep fried, served with buffalo sauce.</p></div><span class="dots"></span><span class="price">8</span></div>
+        <div class="m-item"><div class="l"><b>Steak Bites <span class="diet">gf</span></b><p>Blackened and served with a creamy bleu cheese sauce.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Smoked Wings</b><p>1 lb bone-in, smoked in-house, Honey Chipotle BBQ or Buffalo, ranch or bleu cheese.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Julie's Famous Guacamole <span class="diet">gf · v</span></b><p>Made to order, fresh corn tortilla chips. One or two avocado.</p></div><span class="dots"></span><span class="price">7 / 13</span></div>
+        <div class="m-item"><div class="l"><b>Cheese Curds <span class="diet">v</span></b><p>Garlic, Cheddar &amp; Bacon, or Ghost Pepper. Choice of dipping sauces.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Bonfire Nachos</b><p>Onions, jalapeños, mozzarella &amp; cheddar, honey sriracha &amp; sriracha aioli. Pulled pork or chicken.</p></div><span class="dots"></span><span class="price">12 / 14</span></div>
+        <div class="m-item"><div class="l"><b>Lobster Poutine</b><p>Sweet potato fries, white cheddar curds, lobster tarragon cream sauce.</p></div><span class="dots"></span><span class="price">14</span></div>
+        <div class="m-item"><div class="l"><b>Whitefish Cakes</b><p>Two smoked Lake Superior cakes, cilantro lime aioli.</p></div><span class="dots"></span><span class="price">14</span></div>
+      </div>
+    </div>
+
+    <div class="menu-cat reveal">
+      <h3 class="cat-title">Burgers &amp; Sandwiches</h3>
+      <p class="cat-sub">Served with garlic parmesan fries, sweet potato fries, or onion rings. Choice of sauce and cheese. Gluten-free bun available, add 2.</p>
+      <div class="items">
+        <div class="m-item"><div class="l"><b>Bonfire Burger</b><p>Half-pound brisket &amp; chuck, grilled or blackened, choice of cheese &amp; sauce, brioche.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Cuban Panini</b><p>Grilled pork, ham, swiss, pickles &amp; mustard garlic jalapeño aioli on Tuscan white.</p></div><span class="dots"></span><span class="price">16</span></div>
+        <div class="m-item"><div class="l"><b>Popper Burger</b><p>Brisket &amp; chuck topped with two jalapeño poppers, brioche.</p></div><span class="dots"></span><span class="price">14</span></div>
+        <div class="m-item"><div class="l"><b>Chicken Pesto Panini</b><p>Orange-rosemary chicken, pesto, bacon &amp; swiss on Tuscan white.</p></div><span class="dots"></span><span class="price">13</span></div>
+        <div class="m-item"><div class="l"><b>Elk Burger</b><p>Wild elk with grilled onions &amp; swiss, brioche.</p></div><span class="dots"></span><span class="price">14</span></div>
+        <div class="m-item"><div class="l"><b>Whitefish Tacos</b><p>Hand-battered Lake Superior whitefish, cabbage, avocado, jalapeño &amp; baja sauce. GF option.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Beyond Burger <span class="diet">v · vg</span></b><p>Vegan patty, tomato, lettuce, red onion &amp; a side of mango salsa.</p></div><span class="dots"></span><span class="price">14</span></div>
+        <div class="m-item"><div class="l"><b>Chipotle Shrimp Tacos</b><p>Chipotle shrimp, cucumber-cilantro, avocado, baja sauce &amp; mango salsa, warm tortillas.</p></div><span class="dots"></span><span class="price">14</span></div>
+        <div class="m-item"><div class="l"><b>Smokehouse Burger</b><p>Brisket &amp; chuck, smoked pork, Bonfire-Brandy BBQ, crispy onions &amp; beer cheese.</p></div><span class="dots"></span><span class="price">15</span></div>
+        <div class="m-item"><div class="l"><b>California Chicken Club</b><p>Chicken breast, bacon, grilled pineapple, swiss &amp; avocado, brioche.</p></div><span class="dots"></span><span class="price">13</span></div>
+      </div>
+    </div>
+
+    <div class="menu-cat reveal">
+      <h3 class="cat-title">Salads</h3>
+      <p class="cat-sub">Add chicken, shrimp, or steak where noted.</p>
+      <div class="items">
+        <div class="m-item"><div class="l"><b>Strawberry Spinach</b><p>Spinach, candied pecans, dried cranberries, goat cheese, red onion, poppyseed. +Chicken 14, +Shrimp 16.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Caesar</b><p>Romaine, croutons, parmesan, house-made caesar (contains anchovies). +Chicken 14, +Steak 16.</p></div><span class="dots"></span><span class="price">11</span></div>
+        <div class="m-item"><div class="l"><b>Apple Harvest</b><p>Mixed greens, apples, walnuts, cranberries, red onion, bleu cheese, açaí dressing. +Chicken 14, +Shrimp 16.</p></div><span class="dots"></span><span class="price">12</span></div>
+        <div class="m-item"><div class="l"><b>Grilled Salmon Salad</b><p>5 oz filet, greens, cucumbers, red onion, tomatoes, crumbled bleu cheese &amp; bleu cheese dressing.</p></div><span class="dots"></span><span class="price">16</span></div>
+      </div>
+    </div>
+
+    <div class="menu-cat reveal">
+      <h3 class="cat-title">Entrées</h3>
+      <p class="cat-sub">Served with a side salad and two sides (excluding pastas). Sides: street corn (+2), mushroom parmesan risotto, potato du jour, garlic parmesan fries, sweet potato fries, onion rings, zucchini medley.</p>
+      <div class="items">
+        <div class="m-item"><div class="l"><b>Ribeye</b><p>14 oz, grilled, Black &amp; Bleu or Coffee-Cocoa rubbed, cranberry demi-glace.</p></div><span class="dots"></span><span class="price">25</span></div>
+        <div class="m-item"><div class="l"><b>Twin Lobster Tails</b><p>Served with drawn butter.</p></div><span class="dots"></span><span class="price">32</span></div>
+        <div class="m-item"><div class="l"><b>Herb-Encrusted Filet</b><p>8 oz, served with a garlic herb butter.</p></div><span class="dots"></span><span class="price">32</span></div>
+        <div class="m-item"><div class="l"><b>Southwest New York Strip</b><p>14 oz, southwest rubbed &amp; topped with crispy onions.</p></div><span class="dots"></span><span class="price">24</span></div>
+        <div class="m-item"><div class="l"><b>Honey BBQ Salmon</b><p>8 oz, served with mango salsa.</p></div><span class="dots"></span><span class="price">24</span></div>
+        <div class="m-item"><div class="l"><b>Crab-Stuffed Salmon</b><p>8 oz, served with a citrus beurre blanc.</p></div><span class="dots"></span><span class="price">24</span></div>
+        <div class="m-item"><div class="l"><b>Almond-Encrusted Whitefish</b><p>Fresh Lake Superior whitefish, cranberry compound butter.</p></div><span class="dots"></span><span class="price">24</span></div>
+        <div class="m-item"><div class="l"><b>Coconut Shrimp</b><p>Ten, hand-battered &amp; rolled in sweet coconut, chili sauce.</p></div><span class="dots"></span><span class="price">21</span></div>
+        <div class="m-item"><div class="l"><b>Bonfire BBQ Ribs</b><p>Half rack, St. Louis style, smoked in-house, Bonfire Brandy BBQ.</p></div><span class="dots"></span><span class="price">18</span></div>
+        <div class="m-item"><div class="l"><b>Bonfire Chicken</b><p>Grilled orange-rosemary chicken, sun-dried tomato-basil cream sauce.</p></div><span class="dots"></span><span class="price">16</span></div>
+        <div class="m-item"><div class="l"><b>Roma Chicken</b><p>Orange-rosemary chicken breast, rosemary tomatoes, spinach &amp; mozzarella.</p></div><span class="dots"></span><span class="price">15</span></div>
+      </div>
+    </div>
+
+    <div class="menu-cat reveal">
+      <h3 class="cat-title">Pastas</h3>
+      <p class="cat-sub">Gluten-free pasta available, add 2.</p>
+      <div class="items">
+        <div class="m-item"><div class="l"><b>Lobster Mac &amp; Cheese</b><p>6 oz baked lobster tail on our creamy mac &amp; cheese.</p></div><span class="dots"></span><span class="price">21</span></div>
+        <div class="m-item"><div class="l"><b>Steak Bite Pasta</b><p>Blackened steak bites on linguine, creamy bleu cheese alfredo.</p></div><span class="dots"></span><span class="price">18</span></div>
+        <div class="m-item"><div class="l"><b>Southwest Chicken Pasta</b><p>Grilled chicken, red onion, spinach &amp; red peppers on penne, bacon alfredo.</p></div><span class="dots"></span><span class="price">18</span></div>
+        <div class="m-item"><div class="l"><b>Sun-Dried Tomato Basil Pasta</b><p>Linguini in sun-dried tomato basil cream. +Chicken 16.</p></div><span class="dots"></span><span class="price">14</span></div>
+        <div class="m-item"><div class="l"><b>Penne Pesto Pasta</b><p>Black olives &amp; diced tomatoes tossed in our pesto. +Chicken 16.</p></div><span class="dots"></span><span class="price">14</span></div>
+        <div class="m-item"><div class="l"><b>Baked Spinach &amp; Cheese Rotolo <span class="diet">v</span></b><p>Lasagna noodles stuffed with spinach &amp; cheese, marinara &amp; pesto.</p></div><span class="dots"></span><span class="price">18</span></div>
+      </div>
+    </div>
+
+    <div class="menu-cat reveal">
+      <h3 class="cat-title">Desserts</h3>
+      <div class="items">
+        <div class="m-item"><div class="l"><b>Desserts</b><p>Carrot Cake · Peanut Butter Explosion · J.D. Ice Cream (Jack Daniels chocolate chip) · Ice Cream Sundae.</p></div><span class="dots"></span><span class="price">7</span></div>
+        <div class="m-item"><div class="l"><b>Dessert for Two</b><p>Decadent Chocolate Cake (gluten free) · White Chocolate Raspberry Cheesecake.</p></div><span class="dots"></span><span class="price">9</span></div>
+      </div>
+    </div>
+
+    <p class="legend reveal">gf gluten-free · v vegetarian · vg vegan · df dairy-free &nbsp;·&nbsp; Consuming raw or undercooked meats, fish, or eggs may increase your risk of foodborne illness.</p>
+  </section>
+</div>
+<div style="text-align:center;padding:0 0 5rem"><a class="menu-back" href="index.html">&#8592; Back to Home</a></div>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand"><b>BONFIRE</b><span style="color:var(--gold);font-size:.6rem;letter-spacing:.34em">The Continental Fire Co.</span></div>
+        <p class="about">A historic firehouse turned steakhouse &amp; lounge in the heart of Houghton, Michigan.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/bonfire.cfc/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="tel:+19065235833" aria-label="Call">✆</a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>Explore</h4>
+        <a href="index.html#story">Our Story</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#drinks">The Bar</a>
+        <a href="index.html#experiences">Experiences</a>
+      </div>
+      <div class="fcol">
+        <h4>Visit</h4>
+        <p>408 E Montezuma Ave</p>
+        <p>Houghton, MI 49931</p>
+        <a href="tel:+19065235833">(906) 523-5833</a>
+        <p>Wed – Sat · 5–11 PM</p>
+      </div>
+      <div class="fcol">
+        <h4>More</h4>
+        <a href="tel:+19065235833">Private Events</a>
+        <a href="index.html">Gift Cards</a>
+        <a href="index.html">Careers</a>
+        <a href="index.html">Accessibility &amp; Policies</a>
+      </div>
+    </div>
+    <div class="copyright">© <span id="yr"></span> Bonfire at The Continental Fire Co. · Houghton, Michigan · Site concept, placeholder content for review.</div>
+    <div class="credit">Built by <a href="tel:+19063690231">Nolan Johnson</a></div>
+  </div>
+</footer>
+<script>
+  // header scroll state
+  const hdr=document.getElementById('hdr');
+  addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>40));
+  // mobile nav
+  const nav=document.getElementById('nav'),tg=document.getElementById('toggle');
+  tg.addEventListener('click',()=>nav.classList.toggle('open'));
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  // reveal on scroll (granular, staggered)
+  (function(){
+    var sel = "section h2, section h3, .eyebrow, .rule, .cat-title, .cat-sub, .note, .legend, .story p, .story .serif, .story .imgs, .promo p, .promo .btn, .promo .img, .m-item, .cocktail, .exp, .insta p, .insta .btn, .sq, .news h3, .news p, .news form, .reserve p, .phone-big, .fact, .hours-row, .info .btn, .loc iframe, footer .brand, .about, .fcol, .socials";
+    var els = Array.prototype.slice.call(document.querySelectorAll(sel)).filter(function(el){return !el.closest('header') && !el.closest('.hero');});
+    if(!('IntersectionObserver' in window)) return;
+    var counts = new Map();
+    els.forEach(function(el){
+      el.classList.add('ra');
+      var p = el.parentElement, i = counts.get(p) || 0; counts.set(p, i + 1);
+      el.style.transitionDelay = Math.min(i * 70, 420) + 'ms';
+    });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } });
+    }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  })();
+  // year
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
