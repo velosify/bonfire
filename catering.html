@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="canonical" href="https://bonfirecfc.com/story.html" />
-<title>Our Story &middot; Bonfire at The Continental Fire Co.</title>
-<meta name="description" content="The story of Bonfire at The Continental Fire Co. — a historic 1883 firehouse reborn as a steakhouse and lounge in Houghton, Michigan." />
+<link rel="canonical" href="https://bonfirecfc.com/catering.html" />
+<title>Catering in Houghton, MI | Bonfire at The Continental Fire Co.</title>
+<meta name="description" content="Catering in Houghton, MI and across the Keweenaw. Bonfire at The Continental Fire Co. caters weddings, corporate events, and parties on-site or off-site with smoked meats, steaks, and scratch-made dishes." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://bonfirecfc.com/story.html" />
-<meta property="og:title" content="Our Story &middot; Bonfire at The Continental Fire Co." />
-<meta property="og:description" content="A historic 1883 firehouse reborn as a steakhouse and lounge in Houghton, Michigan." />
+<meta property="og:url" content="https://bonfirecfc.com/catering.html" />
+<meta property="og:title" content="Catering in Houghton, MI | Bonfire at The Continental Fire Co." />
+<meta property="og:description" content="Catering in Houghton, MI and across the Keweenaw. Bonfire at The Continental Fire Co. caters weddings, corporate events, and parties on-site or off-site with smoked meats, steaks, and scratch-made dishes." />
 <meta property="og:image" content="https://bonfirecfc.com/bonfire-og-v2.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://bonfirecfc.com/bonfire-og-v2.jpg" />
@@ -90,6 +90,8 @@
   .hero .wrap{position:relative;z-index:2;text-align:center;padding-top:8rem}
   .hero h1{font-size:clamp(3rem,9vw,7.5rem);font-weight:700;text-shadow:0 8px 40px rgba(0,0,0,.6)}
   .hero h1 em{font-style:normal;color:var(--gold-bright);display:block}
+  .hero-h1{margin:0}
+  .hero-logo{width:min(540px,86vw);height:auto;margin:0 auto;display:block;filter:drop-shadow(0 6px 26px rgba(0,0,0,.55))}
   .hero .lede{
     font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,2.4vw,1.7rem);
     color:var(--cream);opacity:.92;max-width:640px;margin:1.6rem auto 2.4rem;font-weight:400;
@@ -110,7 +112,7 @@
     display:grid;grid-template-columns:1.05fr 1fr;align-items:center;
   }
   .promo .txt{padding:clamp(3rem,6vw,5.5rem) clamp(2rem,6vw,5rem)}
-  .promo .img{min-height:100%;background:#000 none center/cover;position:relative}
+  .promo .img{min-height:100%;background:#000 url('') center/cover;position:relative}
   .promo .img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,17,16,.6),transparent 40%)}
   .promo h2{font-size:clamp(2rem,4vw,3.2rem);margin:.4rem 0 1rem}
   .promo p{color:var(--muted);max-width:46ch;margin-bottom:1.8rem}
@@ -166,6 +168,8 @@
   .exp{border:1px solid var(--line);background:var(--panel);padding:2.4rem 2rem;transition:.35s}
   .exp:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:var(--shadow)}
   .exp .ico{font-size:1.6rem;margin-bottom:1rem}
+  .exp-link{display:inline-block;margin-top:1.1rem;font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:.7rem;color:var(--gold-bright);border-bottom:1px solid var(--line);padding-bottom:.25rem;transition:.25s}
+  .exp-link:hover{color:var(--gold);border-color:var(--gold)}
   .exp h3{font-size:1.3rem;margin-bottom:.7rem;color:var(--cream)}
   .exp p{color:var(--muted);font-size:.9rem}
 
@@ -177,7 +181,7 @@
   .loc-grid>*{min-width:0}
   .fact{display:flex;gap:1rem;margin-bottom:1.7rem;align-items:flex-start}
   .fact .k{font-family:'Jost';text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:var(--gold);min-width:96px;padding-top:.25rem}
-  .fact .v{color:var(--cream)}
+  .fact .v{color:var(--cream);overflow-wrap:anywhere;min-width:0}
   .fact .v span{color:var(--muted);display:block;font-size:.92rem}
   .hours-row{display:flex;justify-content:space-between;max-width:340px;border-bottom:1px solid rgba(169,158,143,.15);padding:.45rem 0;font-size:.92rem}
   .hours-row.closed{color:var(--muted)}
@@ -224,7 +228,7 @@
     background:radial-gradient(65% 55% at 50% 118%, rgba(226,124,48,.6), rgba(192,86,42,.18) 45%, transparent 72%);
     animation:flicker 5s ease-in-out infinite;
   }
-  @keyframes flicker{0%,100%{opacity:.8;transform:scaleY(1)}20%{opacity:1;transform:scaleY(1.04)}45%{opacity:.62;transform:scaleY(.98)}70%{opacity:.92;transform:scaleY(1.02)}}
+  @keyframes flicker{0%,100%{opacity:.85}45%{opacity:.62}70%{opacity:.92}}
   .ember{position:absolute;bottom:-12px;width:5px;height:5px;border-radius:50%;
     background:radial-gradient(circle,#ffcf8a,#e2782c 60%,transparent);z-index:1;opacity:0;filter:blur(.3px);
     animation:rise linear infinite}
@@ -264,15 +268,20 @@
   .menu-back:hover{color:var(--gold)}
 
   /* ---------- GATEWAYS ---------- */
-  .gateways{display:grid;grid-template-columns:1fr 1fr;gap:0;border-block:1px solid var(--line)}
-  .gate{position:relative;min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;color:var(--cream)}
-  .gate + .gate{border-left:1px solid var(--line)}
-  .gate-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0;transition:transform .7s ease}
-  .gate::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(rgba(11,9,8,.5),rgba(11,9,8,.66));transition:.5s}
+  .gateways-wrap{width:min(1280px,94vw);margin-inline:auto;padding:clamp(3rem,6vw,5.5rem) 0}
+  .gateways{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+  .gate{position:relative;min-height:min(74vh,660px);display:flex;overflow:hidden;color:#fff}
+  .gate-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0;transition:transform .8s ease}
+  .gate::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.34) 36%,rgba(0,0,0,.34) 60%,rgba(0,0,0,.6));transition:.5s}
   .gate:hover .gate-bg{transform:scale(1.05)}
-  .gate:hover::before{background:linear-gradient(rgba(11,9,8,.34),rgba(11,9,8,.56))}
-  .gate .g-inner{position:relative;z-index:2;width:min(90%,540px);padding:2rem}
-  .g-title{font-family:'Cormorant Garamond',serif;text-transform:none;font-weight:500;font-size:clamp(1.8rem,2.9vw,2.9rem);line-height:1.16;color:var(--cream);margin:.5rem 0 1.7rem}
+  .gate .g-inner{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;padding:clamp(2.4rem,4.5vw,3.4rem) clamp(1.5rem,4vw,2.5rem)}
+  .gate .eyebrow{color:rgba(255,255,255,.85);text-shadow:0 1px 8px rgba(0,0,0,.55)}
+  .g-title{font-family:'Cormorant Garamond',serif;text-transform:none;font-weight:500;font-size:clamp(1.75rem,2.7vw,2.7rem);line-height:1.18;color:#fff;margin:.4rem 0 0;text-shadow:0 2px 14px rgba(0,0,0,.62), 0 1px 3px rgba(0,0,0,.55);max-width:17ch}
+  .glass{display:inline-block;font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.22em;font-size:.74rem;color:#fff;padding:.9rem 2.2rem;border-radius:999px;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.12);backdrop-filter:blur(9px) saturate(1.3);-webkit-backdrop-filter:blur(9px) saturate(1.3);transition:.35s;position:relative;overflow:hidden}
+  .gate:hover .glass{background:rgba(255,255,255,.24);border-color:rgba(255,255,255,.8);transform:translateY(-2px)}
+  .glass::after{content:"";position:absolute;top:-50%;left:-125%;width:55%;height:200%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-22deg);transition:left .7s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+  .gate:hover .glass::after{left:155%}
+  .gate-wide{min-height:min(50vh,430px)}
 
   /* ---------- RESPONSIVE ---------- */
   @media(max-width:900px){
@@ -289,11 +298,27 @@
     .reserve{background-attachment:scroll}
     .m-item .dots{display:none}
     .gateways{grid-template-columns:1fr}
-    .gate + .gate{border-left:none;border-top:1px solid var(--line)}
-    .gate{min-height:58vh}
+    .gate{min-height:56vh}
   }
   @media(max-width:520px){.cocktails{grid-template-columns:1fr 1fr}}
 </style>
+<style>
+  .copy{max-width:820px;margin:0 auto;text-align:center}
+  .copy .lead{font-family:'Cormorant Garamond',serif;font-size:clamp(1.25rem,2.4vw,1.7rem);color:var(--cream);line-height:1.6}
+  .copy p{color:var(--muted);line-height:1.8;margin-bottom:1.1rem}
+  .blocklist{max-width:760px;margin:1.5rem auto 0}
+  .blocklist .row{display:flex;gap:1rem;align-items:flex-start;padding:1rem 0;border-bottom:1px solid var(--line)}
+  .blocklist .row b{font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--cream);font-size:.95rem;min-width:210px}
+  .blocklist .row span{color:var(--muted);font-size:.95rem}
+  .cta-band{text-align:center;border-top:1px solid var(--line);background:var(--charcoal);padding:clamp(3.5rem,7vw,5.5rem) 1rem}
+  .cta-band h2{font-size:clamp(2rem,5vw,3.4rem)}
+  .cta-band p{color:var(--muted);max-width:44ch;margin:1rem auto 2rem}
+  .cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+  @media(max-width:640px){.blocklist .row{flex-direction:column;gap:.25rem}.blocklist .row b{min-width:0}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"Catering","name":"Catering by Bonfire at The Continental Fire Co.","url":"https://bonfirecfc.com/catering.html","areaServed":["Houghton, MI","Hancock, MI","Keweenaw County","Copper Country","Upper Peninsula, Michigan"],"provider":{"@type":"Restaurant","name":"Bonfire at The Continental Fire Co.","telephone":"+1-906-523-5833","url":"https://bonfirecfc.com/","address":{"@type":"PostalAddress","streetAddress":"408 E Montezuma Ave","addressLocality":"Houghton","addressRegion":"MI","postalCode":"49931","addressCountry":"US"}}}
+</script>
 </head>
 <body>
 <header id="hdr">
@@ -309,31 +334,41 @@
 </header>
 <section class="menu-hero">
   <div class="wrap">
-    <p class="eyebrow" style="justify-content:center">Our Story</p>
-    <h1>A Firehouse, Reborn</h1>
+    <p class="eyebrow" style="justify-content:center">On-Site &amp; Off-Site</p>
+    <h1>Catering in Houghton, MI</h1>
   </div>
 </section>
 <section class="pad wrap">
-  <div class="story">
-    <div class="imgs"><img src="firehouse.jpg" alt="The historic Continental Fire Co. building, now Bonfire, in downtown Houghton" /></div>
-    <div>
-      <p class="serif">Built in 1883 for the Continental Fire Company, this Italianate brick landmark has anchored the corner of Huron and Montezuma for well over a century.</p>
-      <p>The three-story hall did more than answer alarms. From 1886 to 1889, the Michigan Mining School, known today as Michigan Technological University, held its very first classes on the second floor and in the basement below the engine bays.</p>
-      <p>A bell cast in 1884 once hung in the cupola, where fire hoses were raised to dry. The department answered Houghton's calls here until 1974, and the building was placed on the National Register of Historic Places, as part of the Shelden Avenue Historic District, in 1987.</p>
-      <p>In 2012 the old firehouse was reborn as The Continental Fire Co. Today it is home to Bonfire, a steakhouse, lounge, live-music stage, and banquet hall gathered under one historic roof, where cuts are seared over open flame and Copper Country gathers long after the last plate is cleared.</p>
-      <a class="btn" href="index.html#visit">Plan Your Visit</a>
+  <div class="copy reveal"><p class="lead">In-house catering from the Bonfire kitchen &mdash; smoked meats, hand-cut steaks, and from-scratch dishes for events at the firehouse or anywhere across the Keweenaw and Copper Country.</p></div>
+  <div class="exp-grid" style="margin-top:clamp(2.5rem,5vw,4rem)">
+      <div class="exp"><h3>On-Site Events</h3><p>Full-service catering for events hosted in our banquet hall and lounge.</p></div>
+      <div class="exp"><h3>Off-Site Catering</h3><p>We bring the Bonfire kitchen to your venue across the area.</p></div>
+      <div class="exp"><h3>Weddings & Parties</h3><p>Plated dinners, buffets, and appetizer spreads tailored to your day.</p></div>
+      <div class="exp"><h3>Corporate & Groups</h3><p>Business lunches, meetings, and large-group catering.</p></div>
+  </div>
+</section>
+<section class="pad wrap" style="padding-top:0">
+  <div class="center reveal"><p class="eyebrow" style="justify-content:center">The Food</p><h2 class="section-title">Made From Scratch</h2><div class="rule"></div></div>
+  <div class="blocklist reveal">
+      <div class="row"><b>Smoked & Grilled</b><span>In-house smoked brisket, ribs, and fire-grilled steaks and seafood.</span></div>
+      <div class="row"><b>Appetizers & Shareables</b><span>Boards, dips, wings, and passed bites to start any event.</span></div>
+      <div class="row"><b>Salads & Sides</b><span>Fresh salads and scratch-made sides to round out the menu.</span></div>
+      <div class="row"><b>Custom Menus</b><span>Tell us your headcount and tastes and we'll build a menu to fit.</span></div>
+      <div class="row"><b>Dietary Options</b><span>Vegetarian, vegan, and gluten-free options available on request.</span></div>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="wrap reveal">
+    <p class="eyebrow" style="justify-content:center">Let's Talk</p>
+    <h2 class="display">Cater Your Next Event</h2>
+    <p>Tell us your date and vision and we'll take care of the rest. Reach us by phone or email.</p>
+    <div class="cta-row">
+      <a class="btn solid" href="tel:+19065235833">Call (906) 523-5833</a>
+      <a class="btn" href="mailto:bonfire.cfc@gmail.com?subject=Catering%20Inquiry">Email Us</a>
     </div>
   </div>
 </section>
-
-<section class="pad wrap" style="padding-top:0">
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;border-top:1px solid var(--line);padding-top:2.8rem;text-align:center">
-    <div><div style="font-family:'Cinzel',serif;font-size:1.7rem;color:var(--gold-bright);letter-spacing:.04em">1883</div><div style="font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;color:var(--muted);margin-top:.6rem;line-height:1.5">Built for the Continental Fire Co.</div></div>
-    <div><div style="font-family:'Cinzel',serif;font-size:1.7rem;color:var(--gold-bright);letter-spacing:.04em">1886&ndash;1889</div><div style="font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;color:var(--muted);margin-top:.6rem;line-height:1.5">Michigan Tech&rsquo;s first home</div></div>
-    <div><div style="font-family:'Cinzel',serif;font-size:1.7rem;color:var(--gold-bright);letter-spacing:.04em">1987</div><div style="font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:.68rem;color:var(--muted);margin-top:.6rem;line-height:1.5">National Register of Historic Places</div></div>
-  </div>
-</section>
-<div style="text-align:center;padding:0 0 5rem"><a class="menu-back" href="index.html">&#8592; Back to Home</a></div>
+<div style="text-align:center;padding:3rem 0 5rem"><a class="menu-back" href="index.html">&#8592; Back to Home</a></div>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
