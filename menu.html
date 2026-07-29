@@ -60,8 +60,8 @@
   .btn.solid:hover{background:var(--gold-bright);border-color:var(--gold-bright)}
   .btn::after{content:"";position:absolute;top:-50%;left:-125%;width:55%;height:200%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-22deg);transition:left .6s cubic-bezier(.2,.7,.2,1);pointer-events:none}
   .btn:hover::after{left:155%}
-  .btn.solid::before{content:"";position:absolute;top:-50%;left:-125%;width:45%;height:200%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-22deg);pointer-events:none;animation:glint 5.5s ease-in-out infinite}
-  @keyframes glint{0%,84%{left:-125%}94%{left:155%}100%{left:155%}}
+  .btn.solid::before{content:"";position:absolute;top:-50%;left:-130%;width:20%;height:200%;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);transform:skewX(-22deg);pointer-events:none;animation:glint 6.5s ease-in-out infinite}
+  @keyframes glint{0%,70%{left:-130%}100%{left:170%}}
 
   /* ---------- HEADER ---------- */
   header{
