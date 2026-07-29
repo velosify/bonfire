@@ -53,11 +53,15 @@
     font-family:'Jost',sans-serif;text-transform:uppercase;letter-spacing:.2em;
     font-size:.82rem;font-weight:500;
     padding:.95rem 2rem;border:1px solid var(--gold);color:var(--gold-bright);
-    background:transparent;cursor:pointer;transition:.35s ease;border-radius:1px;
+    background:transparent;cursor:pointer;transition:.35s ease;border-radius:1px;position:relative;overflow:hidden;
   }
-  .btn:hover{background:var(--gold);color:var(--black);box-shadow:0 12px 30px rgba(201,161,90,.25)}
+  .btn:hover{background:var(--gold);color:var(--black);box-shadow:0 12px 30px rgba(201,161,90,.25);transform:translateY(-2px)}
   .btn.solid{background:var(--gold);color:var(--black)}
   .btn.solid:hover{background:var(--gold-bright);border-color:var(--gold-bright)}
+  .btn::after{content:"";position:absolute;top:-50%;left:-125%;width:55%;height:200%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-22deg);transition:left .6s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+  .btn:hover::after{left:155%}
+  .btn.solid::before{content:"";position:absolute;top:-50%;left:-125%;width:45%;height:200%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-22deg);pointer-events:none;animation:glint 5.5s ease-in-out infinite}
+  @keyframes glint{0%,84%{left:-125%}94%{left:155%}100%{left:155%}}
 
   /* ---------- HEADER ---------- */
   header{
