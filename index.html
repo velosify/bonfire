@@ -25,7 +25,7 @@
 <meta name="twitter:image" content="https://bonfirecfc.com/bonfire-og-v2.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
 <noscript><style>.reveal,.ra{opacity:1!important;transform:none!important}</style></noscript>
 <style>
   :root{
@@ -166,12 +166,12 @@
 
   /* ---------- COCKTAILS GALLERY ---------- */
   .cocktails{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
-  .cocktail{position:relative;aspect-ratio:3/4;overflow:hidden;border:1px solid var(--line)}
+  .cocktail{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:4px}
   .cocktail img{width:100%;height:100%;object-fit:cover;transition:.6s ease;filter:brightness(.8)}
   .cocktail:hover img{transform:scale(1.06);filter:brightness(.95)}
-  .cocktail .cap{position:absolute;inset:auto 0 0 0;padding:1.4rem 1.2rem;background:linear-gradient(transparent,rgba(11,9,8,.9))}
-  .cocktail .cap b{font-family:'Jost';text-transform:uppercase;letter-spacing:.1em;font-size:1.05rem;display:block}
-  .cocktail .cap span{font-size:.72rem;color:var(--gold);letter-spacing:.18em;text-transform:uppercase}
+  .cocktail .cap{position:absolute;inset:auto 0 0 0;padding:2.4rem 1rem 1.5rem;background:linear-gradient(transparent,rgba(11,9,8,.9));text-align:center}
+  .pour-name{font-family:'Allura',cursive;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1;color:var(--gold-bright);text-shadow:0 2px 16px rgba(0,0,0,.7)}
+  .pours-headline{font-family:'Cormorant Garamond',serif;text-transform:none;font-weight:500;font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.25;color:var(--cream);max-width:24ch;margin:.5rem auto 1.9rem}
 
   /* ---------- EXPERIENCES ---------- */
   .exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
@@ -291,6 +291,8 @@
   .gate:hover .glass{background:rgba(255,255,255,.24);border-color:rgba(255,255,255,.8);transform:translateY(-2px)}
   .glass::after{content:"";position:absolute;top:-50%;left:-125%;width:55%;height:200%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-22deg);transition:left .7s cubic-bezier(.2,.7,.2,1);pointer-events:none}
   .gate:hover .glass::after{left:155%}
+  .glass:hover{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.75)}
+  .glass:hover::after{left:155%}
   .gate-wide{min-height:min(50vh,430px)}
 
   /* ---------- RESPONSIVE ---------- */
@@ -470,15 +472,15 @@
 <!-- COCKTAILS -->
 <section class="pad wrap" id="drinks">
   <div class="center reveal">
-    <p class="eyebrow">From the Bar</p>
-    <h2 class="section-title">Signature Pours</h2>
-    <div class="rule"></div>
+    <p class="eyebrow">Signature Cocktails</p>
+    <h2 class="pours-headline">Every pour is crafted with intention, from timeless classics to fire-touched originals.</h2>
+    <a class="glass" href="menu.html">Learn More</a>
   </div>
-  <div class="cocktails">
-    <div class="cocktail reveal"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Cocktail" onerror="this.style.display='none';this.parentNode.style.background='#20140d'"/><div class="cap"><span>The Bar</span><b>Craft Cocktails</b></div></div>
-    <div class="cocktail reveal"><img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=800&q=80" alt="Cocktail" onerror="this.style.display='none';this.parentNode.style.background='#20140d'"/><div class="cap"><span>On Tap</span><b>Regional Drafts</b></div></div>
-    <div class="cocktail reveal"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=80" alt="Cocktail" onerror="this.style.display='none';this.parentNode.style.background='#20140d'"/><div class="cap"><span>Cellar</span><b>Wine List</b></div></div>
-    <div class="cocktail reveal"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Dessert cocktail" onerror="this.style.display='none';this.parentNode.style.background='#20140d'"/><div class="cap"><span>No Proof</span><b>Zero-Proof</b></div></div>
+  <div class="cocktails" style="margin-top:clamp(2.5rem,5vw,3.5rem)">
+    <div class="cocktail reveal"><img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Ember cocktail" onerror="this.style.display='none';this.parentNode.style.background='#20140d'"/><div class="cap"><span class="pour-name">Ember</span></div></div>
+    <div class="cocktail reveal"><img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=800&q=80" alt="Copper Country cocktail" onerror="this.style.display='none';this.parentNode.style.background='#20140d'"/><div class="cap"><span class="pour-name">Copper Country</span></div></div>
+    <div class="cocktail reveal"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=800&q=80" alt="Smoke and Oak cocktail" onerror="this.style.display='none';this.parentNode.style.background='#20140d'"/><div class="cap"><span class="pour-name">Smoke &amp; Oak</span></div></div>
+    <div class="cocktail reveal"><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Nightcap cocktail" onerror="this.style.display='none';this.parentNode.style.background='#20140d'"/><div class="cap"><span class="pour-name">Nightcap</span></div></div>
   </div>
 </section>
 
